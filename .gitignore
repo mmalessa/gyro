@@ -10,3 +10,5 @@
 
 /.idea/*
 /composer.phar
+/public/*
+!/public/api/*
