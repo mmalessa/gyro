@@ -45,10 +45,10 @@ const routes: Routes = [
     },
     // canActivateChild: [AuthGuardService],
     children: [
-      {
-        path: 'home',
-        loadChildren: './modules/home/home.module#HomeModule'
-      },
+      // {
+      //   path: 'home',
+      //   loadChildren: './modules/home/home.module#HomeModule'
+      // },
 
     ]
   },
