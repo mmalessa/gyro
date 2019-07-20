@@ -1,3 +1,26 @@
-<h1>Gyro</h1>
-<h2>Demo application</h2>
-<router-outlet></router-outlet>
+<app-header
+    [fixed]="false"
+    [sidebarToggler]="'lg'"
+    [asideMenuToggler]="''"
+>
+    <div class="ml-auto">
+
+    </div>
+</app-header>
+
+<div class="app-body">
+    <app-sidebar [fixed]="true" [display]="'lg'">
+        <app-sidebar-minimizer></app-sidebar-minimizer>
+    </app-sidebar>
+    <main class="main">
+        <cui-breadcrumb></cui-breadcrumb>
+        <div class="container-fluid">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
+    <app-aside [fixed]="true" [display]="false"></app-aside>
+</div>
+
+<app-footer>
+    <span class="ml-auto">{{ appTitle }} &copy; 2019 <a href="http://github.com/mmalessa">mmalessa</a>.</span>
+</app-footer>
