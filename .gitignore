@@ -12,3 +12,5 @@
 /composer.phar
 /public/*
 !/public/api/*
+/config/credentials/*
+!/config/credentials/.gitignore
